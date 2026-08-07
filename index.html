@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero-wrap">
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="/images/logo.png" alt="Astro Logo">
+        <h1>astro</h1>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Blog</a></li>
+
+        <!-- Resources -->
+    <li class="dropdown">
+        <a href="#">
+            Resources
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa-solid fa-palette"></i> Themes</a></li>
+            <li><a href="#"><i class="fa-solid fa-puzzle-piece"></i> Integrations</a></li>
+            <li><a href="#"><i class="fa-regular fa-window-maximize"></i> Site Showcase</a></li>
+            <li><a href="#"><i class="fa-solid fa-book-open"></i> Tutorials</a></li>
+        </ul>
+    </li>
+
+    <!-- Community -->
+    <li class="dropdown">
+        <a href="#">
+            Community
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa-brands fa-discord"></i> Discord</a></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i> Sponsors</a></li>
+            <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> Merch</a></li>
+        </ul>
+    </li>
+
+    <!-- Enterprise -->
+    <li class="dropdown">
+        <a href="#">
+            Enterprise
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Agencies
+                    <span class="new-badge">New</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-file-lines"></i>
+                    Case Studies
+                </a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+
+
+    <a href="#" class="github-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.navbar').classList.toggle('menu-open')">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</nav>
+
+<div class="hero">
+
+    
+
+    <div class="badge">
+        <span class="badge-version">Astro 7.1</span>
+        <span class="badge-text">Available now! <i class="fa-solid fa-arrow-right"></i></span>
+    </div>
+
+    <h2 class="content">
+        The web framework for <br>
+        content-driven websites
+    </h2>
+
+    <p class="sub">
+        Astro powers the world's fastest<br> marketing sites, blogs,
+        e-commerce websites, and more.
+    </p>
+
+    <div class="hero-buttons">
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-secondary"><i class="fa-solid fa-chevron-right"></i> npm create astro@latest <i class="fa-regular fa-copy"></i></button>
+    </div>
+
+    <div class="company-logos-wrap">
+        <p class="company-heading">
+            Used by the largest companies around the world:
+        </p>
+
+        <div class="company-logos">
+            <span class="wordmark google">Google</span>
+            <span class="wordmark unilever"><i class="fa-solid fa-shield"></i></span>
+            <span class="wordmark visa">VISA</span>
+            <span class="wordmark microsoft">Microsoft</span>
+            <span class="wordmark porsche">PORSCHE</span>
+            <span class="wordmark openai">OpenAI</span>
+            <span class="wordmark netlify">netlify</span>
+            <span class="wordmark nordvpn"><i class="fa-solid fa-shield-halved"></i> NordVPN</span>
+        </div>
+        <div class="company-logos row2">
+            <span class="wordmark cloudflare"><i class="fa-solid fa-cloud"></i> CLOUDFLARE</span>
+            <span class="wordmark nbc"><i class="fa-solid fa-feather"></i> NBC NEWS</span>
+            <span class="wordmark guardian">The Guardian</span>
+            <span class="wordmark michelin">MICHELIN</span>
+            <span class="wordmark proton">Proton</span>
+            <span class="wordmark webflow"><i class="fa-brands fa-w"></i> Webflow</span>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="page2">
+    <p class="page2-title">What is Astro?</p>
+    <p class="page2-desc"><strong>Astro</strong> is a JavaScript web framework optimized for building fast, content-driven websites.</p>
+
+    <div class="parent">
+        <div class="child">
+            <div class="icon-circle server"><i class="fa-solid fa-server"></i></div>
+            <h3>Server-First</h3>
+            <p>Astro improves website performance by rendering components on the server, sending lightweight HTML to the browser with zero unnecessary JavaScript overhead.</p>
+        </div>
+        <div class="child">
+            <div class="icon-circle content"><i class="fa-solid fa-file-lines"></i></div>
+            <h3>Content-Driven</h3>
+            <p>Astro was designed to work with your content, no matter where it lives. Load data from your file system, external API, or your favorite CMS.</p>
+        </div>
+        <div class="child">
+            <div class="icon-circle customizable"><i class="fa-solid fa-table-cells"></i></div>
+            <h3>Customizable</h3>
+            <p>Extend Astro with your favorite tools. Bring your own JavaScript UI components, CSS libraries, themes, integrations, and more.</p>
+        </div>
+    </div>
+</div>
+
+<div class="page3">
+    <p class="best">Best-In-Class Performance</p>
+
+    <h1 class="best2">Astro Islands</h1>
+
+    <p class="desc">
+        Islands optimize your website like no other web framework can.
+        Leverage Astro's unique page load performance to improve
+        conversion rates, Core Web Vitals, and SEO.
+    </p>
+
+    <div class="performance">
+
+        <p class="perf-title">% of real-world sites with good Core Web Vitals</p>
+
+        <div class="row">
+            <div class="name">Astro</div>
+            <div class="bar">
+                <div class="fill astro">66%</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="name">WordPress</div>
+            <div class="bar">
+                <div class="fill wordpress">48%</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="name">Gatsby</div>
+            <div class="bar">
+                <div class="fill gatsby">47%</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="name">Next.js</div>
+            <div class="bar">
+                <div class="fill next">30%</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="name">Nuxt</div>
+            <div class="bar">
+                <div class="fill nuxt">28%</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="page4">
+
+    <p class="page4child">Maximum Flexibility</p>
+
+    <h1 class="page4child1">Zero Lock-in</h1>
+
+    <p class="page4child2">
+        Astro supports every major UI framework. Bring your existing components
+        <br>and take advantage of Astro's optimized client build performance.
+    </p>
+
+    <button class="btn">Integrate your favorite framework</button>
+
+    <div class="tabs">
+        <span class="tab active">React</span>
+        <span class="tab">Vue</span>
+        <span class="tab">Preact</span>
+        <span class="tab">Svelte</span>
+        <span class="tab">Solid</span>
+    </div>
+
+    <hr class="full-line">
+
+    <div class="cards">
+
+        <div class="page4child3">
+            <div class="code-block">
+<div class="code-line dim">---</div>
+<div class="code-line highlight"><span class="kw">import</span> BuyButton <span class="kw">from</span> <span class="str">'../components/BuyButton.jsx'</span>;</div>
+<div class="code-line"><span class="kw">import</span> { getProductDetails } <span class="kw">from</span> <span class="str">"ecommerce-package"</span>;</div>
+<div class="code-line"><span class="kw">import</span> ProductPageLayout <span class="kw">from</span> <span class="str">'../layouts/ProductPageLayout.astro'</span>;</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line"><span class="kw">const</span> product = <span class="kw">await</span> getProductDetails(Astro.params.slug);</div>
+<div class="code-line dim">---</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">&lt;<span class="tag">ProductPageLayout</span>&gt;</div>
+<div class="code-line">&nbsp;&nbsp;&lt;<span class="tag">img</span> <span class="attr">src</span>={product.imageUrl} <span class="attr">alt</span>={product.imageAlt} /&gt;</div>
+<div class="code-line">&nbsp;&nbsp;&lt;<span class="tag">h2</span>&gt;{product.name}&lt;/<span class="tag">h2</span>&gt;</div>
+<div class="code-line highlight">&nbsp;&nbsp;&lt;<span class="tag">BuyButton</span> <span class="attr">id</span>={product.id} <span class="attr">client:load</span> /&gt;</div>
+<div class="code-line">&lt;/<span class="tag">ProductPageLayout</span>&gt;</div>
+            </div>
+        </div>
+
+        <div class="phone-frame">
+            <img src="/images/_image (2).webp" alt="Snapback Cap" class="product-image">
+
+            <div class="page4child4">
+                <div class="product-row">
+                    <h3 class="product-name">Snapback Cap</h3>
+                    <p class="product-price">$25.00</p>
+                </div>
+
+                <button class="btn2">Add to cart</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="page5">
+    <p class="page5-eyebrow">Everything you need</p>
+    <h1 class="page5-heading">Fully Featured</h1>
+    <p class="page5-sub">Astro comes with everything you need to build a modern website. Need more? Extend Astro with integrations.</p>
+
+    <div class="page5-grid">
+    <div class="page5child1">
+        <img src="/images/list.png" alt="Content Collections">
+
+        <h2>Content Collections</h2>
+        <p>Organize your Markdown and MDX with built-in TypeScript type-safety and frontmatter validation.</p>
+    </div>
+    <div class="page5child1">
+         <img src="/images/list9.png" alt="Content Collections">
+        <h2>Zero JavaScript</h2>
+        <p>Astro only ships the JavaScript you need and automatically strips away the rest for a faster website.</p>
+    </div>
+    <div class="page5child1">
+         <img src="/images/list2.png" alt="Content Collections">
+        <h2>View Transitions</h2>
+        <p>Seamlessly morph, fade, and swipe across pages with built-in, browser-native View Transition APIs.</p>
+    </div>
+    <div class="page5child1">
+         <img src="/images/list3.png" alt="Content Collections">
+        <h2>Actions</h2>
+        <p>Write type-safe backend functions that you can call directly from your frontend JavaScript client code.</p>
+    </div>
+    <div class="page5child1">
+         <img src="/images/list4.png" alt="Content Collections">
+        <h2>Simple Templating</h2>
+        <p>If you know HTML, you already know enough to write your first Astro component. Build powerful server components everyone on your .</p>
+    </div>
+    <div class="page5child1">
+         <img src="/images/list5.png" alt="Content Collections">
+        <h2>Server Islands</h2>
+        <p>Combine the best of static site generation with dynamic, on-demand rendering, all on a single page.</p>
+    </div>
+     <div class="page5child1">
+         <img src="/images/list6.png" alt="Content Collections">
+        <h2>Dev Toolbar</h2>
+        <p>
+Extend your development environment with apps and integrations for the built-in development toolbar.</p>
+    </div>
+     <div class="page5child1">
+         <img src="/images/list7.png" alt="Content Collections">
+        <h2>Server Islands</h2>
+        <p>Combine the best of static site generation with dynamic, on-demand rendering, all on a single page.</p>
+    </div>
+     <div class="page5child1">
+         <img src="/images/list8.png" alt="Content Collections">
+        <h2>Server Islands</h2>
+        <p>Combine the best of static site generation with dynamic, on-demand rendering, all on a single page.</p>
+    </div>
+    </div>
+</div>
+
+<div class="page6">
+    <h3>Ecosystem</h3>
+    <h1>Themes</h1>
+    <p>
+        Get started faster with a pre-built website
+        theme for Astro. Customize it to make it your own.
+    </p>
+    <div class="buttons">
+        <button>Trending</button>
+        <button>E-Commerce</button>
+        <button>Blogs</button>
+        <button>Docs</button>
+        <button>Portfolios</button>
+        <button>Landing Pages</button>
+    </div>
+ <div class="page6images">
+
+    <div class="card">
+        <img src="/images/_image (11).webp" alt="Theme 1">
+        <div class="overlay">
+            <button>View Theme 👁</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/_image (3).webp" alt="Theme 2">
+        <div class="overlay">
+            <button>View Theme 👁</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/_image (12).webp" alt="Theme 3">
+        <div class="overlay">
+            <button>View Theme 👁</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/_image (9).webp" alt="Theme 4">
+        <div class="overlay">
+            <button>View Theme 👁</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/_image (5).webp" alt="Theme 5">
+        <div class="overlay">
+            <button>View Theme 👁</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/_image (8).webp" alt="Theme 6">
+        <div class="overlay">
+            <button>View Theme 👁</button>
+        </div>
+    </div>
+
+</div>
+
+    <div class="page6part2">
+        <h3>Astro Partner Agencies</h3>
+        <h1>Get professional Astro support</h1>
+        <p>
+            Find the right team for your project with an Astro Partner Agency. From landing pages to e-commerce, get the expert assistance you need.
+        </p>
+        <div class="buttons2">
+            <button>Explore partner agencies</button>
+        </div>
+        <div class="page6images2">
+            <div class="small"><img src="/images/_image (4).webp" alt="Agency"></div>
+            <div class="small"><img src="/images/_image (7).webp" alt="Agency"></div>
+            <div class="small"><img src="/images/_image (10).webp" alt="Agency"></div>
+        </div>
+    </div>
+</div>
+
+<div class="page7">
+    <img src="/images/_image (6).webp" alt="Astro" class="main">
+
+    <div class="dhoni">
+        <h2 class="hi">Start building with</h2>
+        <h1 class="hello">Astro today</h1>
+        <button class="btn5">Get Started</button>
+        <button class="btn6">npm create astro@latest</button>
+    </div>
+</div>
+
+<h1 class="astr">Astro is free, open-source software made possible by these wonderful sponsors</h1>
+
+<div class="logo-grid">
+    <div class="box"><img src="/images/Netlify-removebg-preview.png" alt="Netlify"></div>
+    <div class="box"><img src="/images/datadog2.png" alt="Webflow"></div>
+    <div class="box"><img src="/images/webflow2.png" alt="Cloudflare"></div>
+    <div class="box"><img src="images/mux.png" alt="Mux"></div>
+    <div class="box"><img src="/images/astro-logo-light-gradient.png" alt="ImageKit"></div>
+    <div class="box"><img src="/images/nix" alt="Vercel"></div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <!-- Left Section -->
+        <div class="footer-newsletter">
+            <h2>Let's keep in touch</h2>
+
+            <p>
+                Enter your email to stay up to date <br>
+                with the latest updates from Astro.
+            </p>
+
+            <input type="email" placeholder="your@email.com">
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-links">
+            <h3>Resources</h3>
+
+            <a href="#">Docs</a>
+            <a href="#">Themes</a>
+            <a href="#">Integrations</a>
+            <a href="#">Site Showcase</a>
+            <a href="#">Starter Templates</a>
+        </div>
+
+        <!-- About -->
+        <div class="footer-links">
+            <h3>About</h3>
+
+            <a href="#">Blog</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Partner with us</a>
+            <a href="#">Press</a>
+            <a href="#">Agencies</a>
+        </div>
+
+        <!-- Community -->
+        <div class="footer-links">
+            <h3>Community</h3>
+
+            <a href="#">Contributing</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Wallpapers</a>
+            <a href="#">Swag Shop</a>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-links">
+            <h3>Legal</h3>
+
+            <a href="#">Telemetry</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+
+        <div class="footer-left">
+            <span>🚀 MIT License © 2026</span>
+            <span>Astro Contributors</span>
+        </div>
+
+        <div class="footer-icons">
+            <a href="#">🦋</a>
+            <a href="#">🎮</a>
+            <a href="#">🐱</a>
+            <a href="#">in</a>
+            <a href="#">Ⓜ</a>
+            <a href="#">👽</a>
+            <a href="#">✕</a>
+            <a href="#">▶</a>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+</html>
